@@ -11,7 +11,7 @@ return [
     'master' => [
         'name'        => 'master',
         'uri'         => [
-            '127.0.0.1:3306/test?user=root&password=123456&charset=utf8',
+            '127.0.0.1:3306/rintisan_localtrip?user=root&password=&charset=utf8',
         ],
         'minActive'   => 8,
         'maxActive'   => 8,
@@ -23,7 +23,7 @@ return [
     'slave' => [
         'name'        => 'slave',
         'uri'         => [
-            '127.0.0.1:3306/test?user=root&password=123456&charset=utf8',
+            '127.0.0.1:3306/rintisan_localtrip?user=root&password=&charset=utf8',
         ],
         'minActive'   => 8,
         'maxActive'   => 8,
