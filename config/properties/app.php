@@ -21,4 +21,9 @@ return [
     'env'          => 'Base',
     'db'           => require __DIR__ . DS . 'db.php',
     'cache'        => require __DIR__ . DS . 'cache.php',
+    'devtool' => [
+        'enable' => true,
+        'logEventToConsole' => true,
+        'logHttpRequestToConsole' => true,
+    ],
 ];

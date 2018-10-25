@@ -1,6 +1,8 @@
 <?php
 namespace App\Models\Entity;
 
+use Jasny\Auth\User;
+
 use Swoft\Db\Model;
 use Swoft\Db\Bean\Annotation\Column;
 use Swoft\Db\Bean\Annotation\Entity;
@@ -14,7 +16,7 @@ use Swoft\Db\Types;
  * @Table(name="users")
  * @uses      Users
  */
-class Users extends Model
+class Users extends Model implements User
 {
     /**
      * @var int $id 
@@ -769,4 +771,33 @@ class Users extends Model
         return $this->mobile;
     }
 
+    /**
+     * Get user's hashed password
+     *
+     * @return string
+     */
+    public function getHashedPassword()
+    {
+        // TODO: Implement getHashedPassword() method.
+    }
+
+    /**
+     * Event called on login.
+     *
+     * @return boolean  false cancels the login
+     */
+    public function onLogin()
+    {
+        // TODO: Implement onLogin() method.
+    }
+
+    /**
+     * Event called on logout.
+     *
+     * @return void
+     */
+    public function onLogout()
+    {
+        // TODO: Implement onLogout() method.
+    }
 }
